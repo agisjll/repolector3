@@ -1,0 +1,29 @@
+
+{% block body %}
+
+    <div class="mb-5">
+        {% if (miData) %}    <!--Si existe-->
+                <div class="media" style="background-color: #eee;border-radius: 7px; box-shadow: 0px 15px 60px rgb(62 62 62 / 10%) !important;">
+                    <img src="static/fotos/{{ miData.perfil }}" class="mr-3" alt="perfil" style="    max-width: 150px;">
+                    <div class="media-body" style="text-align: left;">
+                    <h5 class="mt-0">Hola soy {{ miData.nombre }}</h5>
+                    <p>
+                        Mi email es {{ miData.email }}, y mi número de telefono es {{ miData.telefono }}
+                    </p>
+                    <p>
+                        Código # <strong>{{ miData.id }}</strong>
+                    </p>
+                    </div>
+                </div>
+        {% else %}
+            <p class="text-center">
+                <h2> No existe el alumno 😭</h2>
+                <p>
+                    <img src="static/fotos/no_existe.gif" class="mr-3" alt="No existe alumno">
+                </p>
+            </p>
+        {% endif %}
+
+    </div>
+
+{% endblock %}

@@ -1,0 +1,29 @@
+# PASO 1, Crear mi entorno virtual
+#  virtualenv -p python3 env o python3 -m venv env
+
+# PASO 2, Activar el entorno virtual ejecutando;
+#  . env/Scripts/activate 
+
+# IMPORTANTE, para correr el proyecto solo debes ejecutar el archivo
+# requirements.txt con el comando pip install -r requirements.txt en el 
+# mismo se encuentran todas las dependecias del proyecto.
+
+
+Hola amigo gracias por tu compra, espero realmente que el proyecto te sea de gran utilidad.
+
+PASOS A TENER EN CUENTA;
+
+1. Primero crea una bd y sube la tabla que esta en la carpeta BD
+2. Edita el archivo conexionBD.py alli esta las variables para la conexion a BD
+3. Actualmente el QR que espera es el ID del alumno es decir que puedes crear varios alumnos y luego 
+creas unos QR con los IDS correspondientes, pero para evitar este proceso ya la tabla esta cargada con algunos
+registros y te dejo aca en esta carpeta algunos ids que ya existen en la BD, por lo que solo tienes es que Scaner
+
+4. No Olvides comentar en la comunidad de este Canal tu comentario es valioso.
+
+
+NOTA: si no funcio el archivo rrequirements.txt aqui te dejo los paquetes que debes instalar
+#  pip install flask
+
+#Instalar Python MySQL Connector, es una bibliote (Driver) para conectar Python con MySQL
+# pip install mysql-connector-python
